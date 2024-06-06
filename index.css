@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 0; 
+}
+
+#calculadora {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+table.calc_notas, table.notas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table.calc_notas td {
+    padding: 10px;
+}
+
+table.notas th, table.notas td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table.notas th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+table.notas tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table.notas tr:hover {
+    background-color: #f1f1f1;
+}
+
+input[type="text"], input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button.limpar {
+    background-color: #f44336;
+    margin-top: 20px;
+}
+
+button.limpar:hover {
+    background-color: #e53935;
+}
+
+#erro-matricula,
+#erro-nota {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+

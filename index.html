@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova Otávio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="calculadora">
+        <h1>Calculadora de Notas</h1>
+        
+        <form id="form-calculadora">
+            <table class="calc_notas">
+                <tr>
+                    <td><label for="nome">Nome:</label></td>
+                    <td><input type="text" id="nome" name="nome"></td>
+                </tr>
+                <tr>
+                    <td><label for="Matrícula">N° Matrícula:</label></td>
+                    <td><input type="text" id="Matrícula" name="Matrícula" placeholder="123456789"></td>
+                </tr>
+                <tr>
+                    <td><label for="nota_b1">Nota AV1</label></td>
+                    <td><input type="number" id="nota_b1" name="nota_b1" step="0.01" min="0" max="10"></td>
+                </tr>
+                <tr>
+                    <td><label for="nota_b2">Nota AV2:</label></td>
+                    <td><input type="number" id="nota_b2" name="nota_b2" step="0.01" min="0" max="10"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"><button type="submit">Calcular!</button></td>
+                </tr>
+            </table>
+        </form>
+
+        <table class="notas">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>N° Matrícula</th>
+                    <th>Nota AV1</th>
+                    <th>Nota AV2</th>
+                    <th>Média Final</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody id="resultados">
+                <!-- Resultados vão aparecer aqui -->
+            </tbody>
+        </table>
+        <button class="limpar">Limpar Notas</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
